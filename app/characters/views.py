@@ -8,7 +8,7 @@ from core.integrations.defaults import (default_get_characters,
 
 # Create your views here.
 class CharactersView(APIView):
-    """API Endpoint to Characters"""
+    """API Endpoint to all characters"""
 
     def get(self, request):
 

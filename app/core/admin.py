@@ -9,4 +9,4 @@ for model in models:
     except admin.sites.AlreadyRegistered:
         pass
 
-admin.site.site_header = 'Honey Butter Admin'
+admin.site.site_header = 'Sunfri Admin'
