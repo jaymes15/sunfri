@@ -71,7 +71,7 @@ then run
 docker-compose up --build
 ```
 
-To tear down the all containers:
+To tear down all containers:
 
 ```bash
 docker-compose down
