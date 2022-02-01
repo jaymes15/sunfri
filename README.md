@@ -77,7 +77,6 @@ To tear down all containers:
 docker-compose down
 ```
 
-
 To isort:
 
 ```bash
