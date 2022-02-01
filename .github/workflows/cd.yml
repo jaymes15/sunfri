@@ -61,6 +61,7 @@ jobs:
     - name: Heroku app config
       env: 
         SECRET_KEY_STAGING: ${{ secrets.SECRET_KEY }}
+        ALLOWED_HOST_STAGING: ${{ secrets.ALLOWED_HOST_STAGING }}
         DEBUG_STAGING: ${{ secrets.DEBUG }}
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         HEROKU_APP_STAGING: ${{ secrets.HEROKU_APP_STAGING }}
