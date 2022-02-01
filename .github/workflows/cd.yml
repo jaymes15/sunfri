@@ -63,6 +63,7 @@ jobs:
         SECRET_KEY_STAGING: ${{ secrets.SECRET_KEY }}
         ALLOWED_HOST_STAGING: ${{ secrets.ALLOWED_HOST_STAGING }}
         DEBUG_STAGING: ${{ secrets.DEBUG }}
+        DJANGO_SETTINGS_MODULE: ${{ secrets.DJANGO_SETTINGS_MODULE }}
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         HEROKU_APP_STAGING: ${{ secrets.HEROKU_APP_STAGING }}
         THE_ONE_API_KEY: ${{ secrets.THE_ONE_API_KEY }}
