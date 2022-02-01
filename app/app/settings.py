@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'core',
     'users',
+    'characters',
 
 
 ]
@@ -87,11 +88,6 @@ TEMPLATES = [
         },
     },
 ]
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'social_django.context_processors.backends',
-    'social_django.context_processors.login_redirect',
-)
 
 
 WSGI_APPLICATION = 'app.wsgi.application'
