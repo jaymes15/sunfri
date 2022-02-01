@@ -10,3 +10,5 @@ for model in models:
         pass
 
 admin.site.site_header = 'Sunfri Admin'
+
+ß
