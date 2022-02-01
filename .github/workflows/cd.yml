@@ -53,16 +53,17 @@ jobs:
     - name: Build and push
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web 
+      run: heroku container:push -a ${{ secrets.HEROKU_APP_STAGING }} web 
     - name: Release
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} web
+      run: heroku container:release -a ${{ secrets.HEROKU_APP_STAGING }} web
     - name: Heroku app config
       env: 
-        SECRET_KEY: ${{ secrets.SECRET_KEY }}
-        DEBUG: ${{ secrets.DEBUG }}
+        SECRET_KEY_STAGING: ${{ secrets.SECRET_KEY }}
+        DEBUG_STAGING: ${{ secrets.DEBUG }}
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        HEROKU_APP_STAGING: ${{ secrets.HEROKU_APP_STAGING }}
         THE_ONE_API_KEY: ${{ secrets.THE_ONE_API_KEY }}
         THE_ONE_API_URL: ${{ secrets.THE_ONE_API_URL }}
         
